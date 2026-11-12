@@ -11,7 +11,7 @@ const Record = mongoose.models.Record || mongoose.model('Record', RecordSchema);
 
 module.exports = async (req, res) => {
   // Enable CORS so GitHub Pages can communicate with this API
-  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Credentials', false);
   res.setHeader('Access-Control-Allow-Origin', '*'); 
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
